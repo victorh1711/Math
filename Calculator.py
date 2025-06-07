@@ -13,10 +13,10 @@ def divisão(x,y):
 
 E=input('Óla, gostaria de efetuar algum cálculo?(sim/não)').lower()
 
-if E=='não' or E=='nao':
+if E=='não' or 'nao' or 'n':
      print('Tá bom, talvez outro dia.')
 
-elif E=='sim':
+elif E=='sim' or 's':
       while True:
          ç=['a','A','b','B','c','C','d','D']
          time.sleep(0.5)
@@ -67,7 +67,7 @@ elif E=='sim':
              print('Por favor, selecione uma dentre as as opções.(a,b,c,d)')
             
          N=input('Gostaria de executar outro cáculo?(sim/não)').lower()
-         if N =='nao' or N=='não':
+         if N =='nao' or 'não' or 'n':
             print('Ok, até a proxima!')
             break #permite sair do loop while
          elif N=='sim':
